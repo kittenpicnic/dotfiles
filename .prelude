@@ -1,0 +1,1 @@
+[[ ! -f $HOME/.yehnah/.yehnah.prelude.zsh ]] || source $HOME/.yehnah/.yehnah.prelude.zsh

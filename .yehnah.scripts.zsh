@@ -1,0 +1,1 @@
+alias updateDependencies="~/.yehnah/scripts/update_dependencies"

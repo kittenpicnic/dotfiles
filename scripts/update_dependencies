@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CONFIG
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - PRELUDE -------------------------------------------------------------------
+#   Load core functions and utilities for scripting
+
+    source "$(dirname "$(dirname "$0")")/.prelude"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SCRIPT
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - MAIN ENTRY -----------------------------------------------------------------
+
+    function main {
+        printf "\n${GREEN}Update: apt${NC}\n\n"
+        sudo apt update
+        sudo apt upgrade
+
+        printf "\n${GREEN}Update: apt-get${NC}\n\n"
+        sudo apt-get update
+        sudo apt-get upgrade
+
+        printf "\n${GREEN}Update: snap${NC}\n\n"
+        sudo snap refresh
+
+        printf "\n${GREEN}Update: rustup${NC}\n\n"
+        rustup update
+
+        printf "\n${GREEN}Update: n${NC}\n\n"
+        n latest
+
+        printf "\n${GREEN}Update: npm${NC}\n\n"
+        npm upgrade --global
+
+        printf "${GREEN}Update: yarn${NC}\n\n"
+        yarn global upgrade
+
+        printf "\n${GREEN}Update: Finished${NC}\n\n"
+    }
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EXECUTION
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - RUN AS ROOT ----------------------------------------------------------------
+
+    printf "${RED}Note: This script uses sudo and will require root priviliges.${NC}\n"
+    yes_or_no "Do you wish to continue?" && main
+
