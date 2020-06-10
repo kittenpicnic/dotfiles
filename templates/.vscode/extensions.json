@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "wmaurer.change-case",
+        "stevenphan.framer-syntax",
+        "eamodio.gitlens",
+        "richie5um2.vscode-sort-json",
+        "sidp.strict-whitespace",
+        "hbenl.vscode-test-explorer"
+    ],
+    "unwantedRecommendations": [
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ]
+}

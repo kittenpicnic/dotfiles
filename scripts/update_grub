@@ -16,33 +16,11 @@
 # - MAIN ENTRY -----------------------------------------------------------------
 
     function main {
-        printf "\n${GREEN}Update: apt${NC}\n\n"
-        sudo apt update
-        sudo apt upgrade
+        printf "\n${GREEN}Update: grub config${NC}\n\n"
+        sudo update-grub
 
-        printf "\n${GREEN}Update: apt-get${NC}\n\n"
-        sudo apt-get update
-        sudo apt-get upgrade
-
-        printf "\n${GREEN}Update: apt autoremove${NC}\n\n"
-        sudo apt autoremove
-
-        printf "\n${GREEN}Update: snap${NC}\n\n"
-        sudo snap refresh
-
-        printf "\n${GREEN}Update: rustup${NC}\n\n"
-        rustup update
-
-        printf "\n${GREEN}Update: n${NC}\n\n"
-        n latest
-
-        printf "\n${GREEN}Update: npm${NC}\n\n"
-        npm upgrade --global
-
-        printf "${GREEN}Update: yarn${NC}\n\n"
-        yarn global upgrade
-
-        printf "\n${GREEN}Update: Finished${NC}\n\n"
+        printf "\n${GREEN}Update: grub2 config${NC}\n\n"
+        sudo update-grub2
     }
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -52,4 +30,3 @@
 # - RUN AS ROOT ----------------------------------------------------------------
 
     ask_for_sudo main
-

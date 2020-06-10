@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# ═════════════════════════════════════════════════════════════════════════════
+# SCRIPTS | CLEANUP | LINUX KERNELS
+# ═════════════════════════════════════════════════════════════════════════════
+# This script lists and removes extra, unused kernel packages.
+
+# Note: The one-line command used in this script was found in the following
+# StackExchange answer:https://askubuntu.com/a/196437
+
 # ══════════════════════════════════════════════════════════════════════════════
 # CONFIG
 # ══════════════════════════════════════════════════════════════════════════════
@@ -13,36 +21,26 @@
 # SCRIPT
 # ══════════════════════════════════════════════════════════════════════════════
 
+    function list_kernels {
+        dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d")
+    }
+
+    function remove_kernels {
+        sudo apt-get purge $( list_kernels )
+    }
+
 # - MAIN ENTRY -----------------------------------------------------------------
 
     function main {
-        printf "\n${GREEN}Update: apt${NC}\n\n"
-        sudo apt update
-        sudo apt upgrade
+        printf "\n${GREEN}Your current kernel image:${NC} "
+        uname -r
 
-        printf "\n${GREEN}Update: apt-get${NC}\n\n"
-        sudo apt-get update
-        sudo apt-get upgrade
+        printf "\n${YELLOW}The following kernel images will be removed:${NC}\n"
+        list_kernels
 
-        printf "\n${GREEN}Update: apt autoremove${NC}\n\n"
-        sudo apt autoremove
+        printf "\n"
 
-        printf "\n${GREEN}Update: snap${NC}\n\n"
-        sudo snap refresh
-
-        printf "\n${GREEN}Update: rustup${NC}\n\n"
-        rustup update
-
-        printf "\n${GREEN}Update: n${NC}\n\n"
-        n latest
-
-        printf "\n${GREEN}Update: npm${NC}\n\n"
-        npm upgrade --global
-
-        printf "${GREEN}Update: yarn${NC}\n\n"
-        yarn global upgrade
-
-        printf "\n${GREEN}Update: Finished${NC}\n\n"
+        yes_or_no "Do you still wish to remove these images?" && remove_kernels
     }
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -52,4 +50,3 @@
 # - RUN AS ROOT ----------------------------------------------------------------
 
     ask_for_sudo main
-

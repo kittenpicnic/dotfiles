@@ -1,0 +1,5 @@
+[user]
+	name = yehnah
+	email = 6722266+yehnah@users.noreply.github.com
+[alias]
+	uncommit = reset HEAD^

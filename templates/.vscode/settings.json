@@ -1,0 +1,39 @@
+// ══════════════════════════════════════════════════════════════════════════════
+// VSCODE PROJECT SETTINGS
+// ══════════════════════════════════════════════════════════════════════════════
+
+{
+
+    //  EDITOR ---------------------------------------------------------------------
+
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.fontLigatures": true,
+        "editor.rulers": [
+            {
+                "color": "#FFFFFF22",
+                "column": 80
+            },
+            {
+                "color": "#FFFFFF10",
+                "column": 120
+            }
+        ],
+
+    //  RUST -----------------------------------------------------------------------
+
+        "rust-client.autoStartRls": false,
+        "rust-client.channel": "nightly",
+        "rust-client.revealOutputChannelOn": "error",
+        "rust.all_features": true,
+        "rust.clippy_preference": "on",
+        "rust.cfg_test": true,
+
+    //  VSCODE ---------------------------------------------------------------------
+
+        "workbench.colorTheme": "Framer Syntax 2",
+        "telemetry.enableCrashReporter": false,
+        "telemetry.enableTelemetry": false,
+
+    }
