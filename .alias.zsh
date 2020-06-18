@@ -6,18 +6,14 @@
 
     alias edit="code"
 
-# - FONTS ----------------------------------------------------------------------
-
-    alias updateFonts="fc-cache -fv"
-
 # - CONFIG FILES ---------------------------------------------------------------
 
     alias configureDotfiles="edit $HOME/.yehnah"
     alias configureGit="edit $HOME/.gitconfig"
-    alias configureZshrc="edit $HOME/.yehnah/.yehnah.zshrc"
-    alias configureZshAliases="edit $HOME/.yehnah/.yehnah.alias.zsh"
-    alias configureZshFunctions="edit $HOME/.yehnah/.yehnah.functions.zsh"
-    alias configureP10k="edit $HOME/.yehnah/.yehnah.p10k.zsh"
+    alias configureZshrc="edit $HOME/.yehnah/.zshrc"
+    alias configureZshAliases="edit $HOME/.yehnah/.alias.zsh"
+    alias configureZshFunctions="edit $HOME/.yehnah/.functions.zsh"
+    alias configureP10k="edit $HOME/.yehnah/.p10k.zsh"
     alias configureVim="edit $HOME/.config/nvim/init.vim"
     alias configureTmux="edit $HOME/.tmux.conf.local"
 

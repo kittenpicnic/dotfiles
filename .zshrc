@@ -44,7 +44,7 @@
 
 # - P10K CONFIG ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.yehnah.p10k.zsh ]] || source $HOME/.yehnah/.yehnah.p10k.zsh
+    [[ ! -f $HOME/.yehnah/.p10k.zsh ]] || source $HOME/.yehnah/.p10k.zsh
 
 # - P10K VARIABLES -------------------------------------------------------------
 
@@ -93,20 +93,25 @@
 
 # - PREFERENCES ----------------------------------------------------------------
 
-export EDITOR='vim'
+# Terminal editor of choice
+export EDITOR='nvim'
 
 # - CONFIG FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.yehnah.prelude.zsh ]] || source $HOME/.yehnah/.yehnah.prelude.zsh
+    [[ ! -f $HOME/.yehnah/.prelude.zsh ]] || source $HOME/.yehnah/.prelude.zsh
 
 # - ALIAS FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.yehnah.alias.zsh ]] || source $HOME/.yehnah/.yehnah.alias.zsh
+    [[ ! -f $HOME/.yehnah/.alias.zsh ]] || source $HOME/.yehnah/.alias.zsh
 
 # - FUNCTION FILE --------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.yehnah.functions.zsh ]] || source $HOME/.yehnah/.yehnah.functions.zsh
+    [[ ! -f $HOME/.yehnah/.functions.zsh ]] || source $HOME/.yehnah/.functions.zsh
 
 # - SCRIPT FILE ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.yehnah.scripts.zsh ]] || source $HOME/.yehnah/.yehnah.scripts.zsh
+    [[ ! -f $HOME/.yehnah/.scripts.zsh ]] || source $HOME/.yehnah/.scripts.zsh
+
+# - HELP FILE ------------------------------------------------------------------
+
+    [[ ! -f $HOME/.yehnah/.help.zsh ]] || source $HOME/.yehnah/.help.zsh

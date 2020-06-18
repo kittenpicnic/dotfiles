@@ -1,0 +1,42 @@
+ .alias.zsh
+------------
+- configureDotfiles
+- configureGit
+- configureZshrc
+- configureZshAliases
+- configureZshFunctions
+- configureP10k
+- configureVim
+- configureTmux
+- zshHistoryClean
+- portsShowNode
+- portsShowNumber
+- portsShowLocal
+- portsStop
+- httpGetStatus
+- nodeRemoveModules
+- nodeListGlobals
+- gitDisplayTree
+
+ .scripts.zsh
+--------------
+- cleanupKernels
+- configureGit
+- installDependencies
+- updateDependencies
+- updateFonts
+- updateGrub
+
+ .prelude.zsh
+--------------
+- ask_for_sudo
+- yes_or_no
+- colors (see file for details)
+
+ /templates
+------------
+- .gitconfig
+  /.vscode
+    - extentions
+    - settings
+    - snippets

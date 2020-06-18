@@ -3,3 +3,4 @@
 	email = 6722266+yehnah@users.noreply.github.com
 [alias]
 	uncommit = reset HEAD^
+	new = git init && git symbolic-ref HEAD refs/heads/main

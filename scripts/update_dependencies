@@ -7,7 +7,7 @@
 # - PRELUDE -------------------------------------------------------------------
 #   Load core functions and utilities for scripting
 
-    source "$(dirname "$(dirname "$0")")/.prelude"
+    source "$(dirname "$0")/.prelude"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SCRIPT

@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# ═════════════════════════════════════════════════════════════════════════════
-# SCRIPTS | CLEANUP | LINUX KERNELS
-# ═════════════════════════════════════════════════════════════════════════════
-# This script lists and removes extra, unused kernel packages.
-
-# Note: The one-line command used in this script was found in the following
-# StackExchange answer:https://askubuntu.com/a/196437
-
 # ══════════════════════════════════════════════════════════════════════════════
 # CONFIG
 # ══════════════════════════════════════════════════════════════════════════════
@@ -21,26 +13,14 @@
 # SCRIPT
 # ══════════════════════════════════════════════════════════════════════════════
 
-    function list_kernels {
-        dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d")
-    }
-
-    function remove_kernels {
-        sudo apt-get purge $( list_kernels )
-    }
-
 # - MAIN ENTRY -----------------------------------------------------------------
 
     function main {
-        printf "\n${GREEN}Your current kernel image:${NC} "
-        uname -r
+        printf "\n${GREEN}Install: npm globals w/ yarn${NC}\n\n"
+        # npmGlobals=["cli-markdown","commitizen","standard-version"]
+        # yarn global add
 
-        printf "\n${YELLOW}The following kernel images will be removed:${NC}\n"
-        list_kernels
-
-        printf "\n"
-
-        yes_or_no "Do you still wish to remove these images?" && remove_kernels
+        printf "\n${GREEN}Install: Finished${NC}\n\n"
     }
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -50,3 +30,4 @@
 # - RUN AS ROOT ----------------------------------------------------------------
 
     ask_for_sudo main
+

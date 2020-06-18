@@ -15,3 +15,11 @@
             echo "You must name your RAMDisk e.g ram_disk ramdisk"
         fi
     }
+
+# - SLURP ----------------------------------------------------------------------
+#   Read a file into a variable
+
+    slurp() {
+        value=$(<$1)
+        echo $value
+    }
