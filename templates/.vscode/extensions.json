@@ -4,8 +4,11 @@
         "stevenphan.framer-syntax",
         "eamodio.gitlens",
         "richie5um2.vscode-sort-json",
+        "unional.vscode-sort-package-json",
         "sidp.strict-whitespace",
-        "hbenl.vscode-test-explorer"
+        "hbenl.vscode-test-explorer",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag"
     ],
     "unwantedRecommendations": [
         "ms-vscode.vscode-typescript-tslint-plugin"

@@ -1,1 +1,4 @@
-echo "{ "path\": \"cz-conventional-changelog\" }" > ~/.czrc;
+#!/bin/bash
+
+echo "This script has not been created yet. :("
+# echo "{ "path\": \"cz-conventional-changelog\" }" > ~/.czrc;

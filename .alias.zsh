@@ -28,7 +28,7 @@
 # - PORTS ----------------------------------------------------------------------
 
     alias portsShowNode="sudo netstat -lp | grep /node"
-    alias portsShowNumber="sudo netstat -lp | grep "
+    alias portsGrep="sudo netstat -lp | grep "
     alias portsShowLocal="sudo netstat -lp | grep '[::]:*'"
     alias portsStop="kill -9"
 

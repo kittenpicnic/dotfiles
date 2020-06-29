@@ -23,3 +23,10 @@
         value=$(<$1)
         echo $value
     }
+
+# - COLOR MAP ------------------------------------------------------------------
+# Output a map of available colors
+
+    color_map() {
+        for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+    }

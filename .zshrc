@@ -42,13 +42,13 @@
     # Custom path for zcompdump
     compinit -d ~/.cache/zsh/.zcompdump-$ZSH_VERSION
 
-# - P10K CONFIG ----------------------------------------------------------------
-
-    [[ ! -f $HOME/.yehnah/.p10k.zsh ]] || source $HOME/.yehnah/.p10k.zsh
-
 # - P10K VARIABLES -------------------------------------------------------------
 
     ZLE_RPROMPT_INDENT=0
+
+# - P10K CONFIG ----------------------------------------------------------------
+
+    [[ ! -f $HOME/.yehnah/.p10k.zsh ]] || source $HOME/.yehnah/.p10k.zsh
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PATH MODIFICATIONS (could go in ~/.zprofile)

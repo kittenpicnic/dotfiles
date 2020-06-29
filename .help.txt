@@ -10,7 +10,7 @@
 - configureTmux
 - zshHistoryClean
 - portsShowNode
-- portsShowNumber
+- portsGrep
 - portsShowLocal
 - portsStop
 - httpGetStatus
@@ -36,7 +36,7 @@
  /templates
 ------------
 - .gitconfig
-  /.vscode
-    - extentions
+- /.vscode
+    - extensions
     - settings
     - snippets
