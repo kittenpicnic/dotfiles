@@ -38,7 +38,7 @@
 
 # - JAVASCRIPT -----------------------------------------------------------------
 
-    alias nodeRemoveModules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+    alias nodeRemoveModules="sudo find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
     alias nodeListGlobals="npm list -g --depth 0; yarn global list --depth 0"
 
 # - GIT ------------------------------------------------------------------------
