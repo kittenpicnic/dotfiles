@@ -13,12 +13,12 @@
 
 # - ZSH THEME (P10K) -----------------------------------------------------------
 
-    source ~/powerlevel10k/powerlevel10k.zsh-theme
+    source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
 
 # - ZSH CONFIG -----------------------------------------------------------------
 
     # History
-    HISTFILE=~/.zsh_history
+    HISTFILE=$HOME/.zsh_history
     HISTSIZE=1000
     SAVEHIST=1000
 
@@ -36,11 +36,10 @@
     fpath=(/usr/local/share/zsh-completions $fpath)
     zstyle :compinstall filename "$HOME/.zshrc"
 
-    autoload -Uz compinit -d $HOME/.cache/zsh/.zcompdump-$ZSH_VERSION
     # Default command
     # compinit
     # Custom path for zcompdump
-    compinit -d ~/.cache/zsh/.zcompdump-$ZSH_VERSION
+    autoload -Uz compinit -d $HOME/.cache/zsh/.zcompdump-$ZSH_VERSION
 
 # - P10K VARIABLES -------------------------------------------------------------
 
@@ -86,6 +85,9 @@
     # set PATH so it includes binaries from Node.js/n (see http://git.io/n-install-repo)
     export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
 
+# - RBENV (RUBY) ---------------------------------------------------------------
+
+eval "$(rbenv init -)"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CUSTOM CONFIGURATION

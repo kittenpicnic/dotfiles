@@ -1,4 +1,40 @@
 #!/bin/bash
 
-echo "This script has not been created yet. :("
-# echo "{ "path\": \"cz-conventional-changelog\" }" > ~/.czrc;
+# ══════════════════════════════════════════════════════════════════════════════
+# CONFIG
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - PRELUDE -------------------------------------------------------------------
+#   Load core functions and utilities for scripting
+
+    source "$(dirname "$0")/.prelude"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SCRIPT
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - MAIN ENTRY -----------------------------------------------------------------
+
+    function main {
+        printf "\n${GREEN}Add: .gitconfig file${NC}\n\n"
+
+        [[ ! -f $HOME/.yehnah/templates/.gitconfig ]] || cp $HOME/.yehnah/templates/.gitconfig $HOME/.gitconfig
+
+        printf "\n${GREEN}Install: commitizen & cz-emoji${NC}\n\n"
+
+        yarn global add commitizen cz-emoji
+
+        printf "\n${GREEN}Modify: ~/.czrc - add cz-emoji config${NC}\n\n"
+
+        echo "{ \"path\": \"cz-emoji\" }" > ~/.czrc
+
+        printf "\n${GREEN}Update: Finished${NC}\n\n"
+    }
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EXECUTION
+# ══════════════════════════════════════════════════════════════════════════════
+
+# - RUN AS ANYONE ----------------------------------------------------------------
+
+    main
