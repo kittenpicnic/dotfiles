@@ -16,9 +16,32 @@
 # - MAIN ENTRY -----------------------------------------------------------------
 
     function main {
-        printf "\n${GREEN}Install: npm globals w/ yarn${NC}\n\n"
-        # npmGlobals=["cli-markdown","commitizen","standard-version"]
-        # yarn global add
+
+        printf "\n${GREEN}Install: apt-get${NC}\n\n"
+        apt-get install git ripgrep
+
+        printf "\n${GREEN}Install: doom emacs${NC}\n\n"
+        git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+        ~/.emacs.d/bin/doom install
+
+        printf "\n${GREEN}Install: p10k shell${NC}\n\n"
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+
+        printf "\n${GREEN}Install: rust via rustup${NC}\n\n"
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+        printf "\n${GREEN}Install: node.js via n${NC}\n\n"
+        curl -L https://git.io/n-install | bash
+        n stable
+
+        printf "\n${GREEN}Install: yarn packages${NC}\n\n"
+        npm install --global yarn
+
+        printf "\n${GREEN}Install: yarn packages${NC}\n\n"
+        yarn global add commitizen
+        yarn global add cz-emoji
+        yarn global add standard-version
+        yarn global add cli-markdown
 
         printf "\n${GREEN}Install: Finished${NC}\n\n"
     }

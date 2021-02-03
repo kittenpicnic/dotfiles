@@ -49,13 +49,19 @@
         rustup update
 
         printf "\n${GREEN}Update: n${NC}\n\n"
-        n latest
+        n stable
 
         printf "\n${GREEN}Update: npm${NC}\n\n"
+        npm install --global npm
+
+        printf "\n${GREEN}Update: npm packages${NC}\n\n"
         npm upgrade --global
 
-        printf "${GREEN}Update: yarn${NC}\n\n"
+        printf "${GREEN}Update: yarn packages${NC}\n\n"
         yarn global upgrade
+
+        printf "${GREEN}Update: emacs - doom${NC}\n\n"
+        doom upgrade
 
         printf "\n${GREEN}Update: Finished${NC}\n\n"
     }
