@@ -20,10 +20,6 @@
 
         [[ ! -f $HOME/.yehnah/templates/.gitconfig ]] || cp $HOME/.yehnah/templates/.gitconfig $HOME/.gitconfig
 
-        printf "\n${GREEN}Install: commitizen & cz-emoji${NC}\n\n"
-
-        yarn global add commitizen cz-emoji
-
         printf "\n${GREEN}Modify: ~/.czrc - add cz-emoji config${NC}\n\n"
 
         echo "{ \"path\": \"cz-emoji\" }" > ~/.czrc

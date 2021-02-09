@@ -1,4 +1,4 @@
-# Yehnah's Config & Dotfiles
+# Config & Dotfiles
 
 ## Includes
 
