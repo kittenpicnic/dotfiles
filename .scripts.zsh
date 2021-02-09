@@ -1,14 +1,14 @@
 # - SYSTEM CONFIGURATION -------------------------------------------------------
 
-alias configureGit="~/.yehnah/scripts/configure_git"
+alias configureGit="~/.dotfiles/scripts/configure_git"
 
 # - SYSTEM DEPENDENCIES --------------------------------------------------------
 
-alias installDependencies="~/.yehnah/scripts/install_dependencies"
-alias updateDependencies="~/.yehnah/scripts/update_dependencies"
+alias installDependencies="~/.dotfiles/scripts/install_dependencies"
+alias updateDependencies="~/.dotfiles/scripts/update_dependencies"
 
 # - SYSTEM MANAGEMENT ----------------------------------------------------------
 
-alias cleanupKernels="~/.yehnah/scripts/cleanup_kernels"
-alias updateGrub="~/.yehnah/scripts/update_grub"
-alias updateFonts="~/.yehnah/scripts/update_fonts"
+alias cleanupKernels="~/.dotfiles/scripts/cleanup_kernels"
+alias updateGrub="~/.dotfiles/scripts/update_grub"
+alias updateFonts="~/.dotfiles/scripts/update_fonts"

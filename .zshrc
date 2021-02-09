@@ -41,13 +41,15 @@
     # Custom path for zcompdump
     autoload -Uz compinit -d $HOME/.cache/zsh/.zcompdump-$ZSH_VERSION
 
+    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
 # - P10K VARIABLES -------------------------------------------------------------
 
     ZLE_RPROMPT_INDENT=0
 
 # - P10K CONFIG ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.p10k.zsh ]] || source $HOME/.yehnah/.p10k.zsh
+    [[ ! -f $HOME/.dotfiles/.p10k.zsh ]] || source $HOME/.dotfiles/.p10k.zsh
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PATH MODIFICATIONS (could go in ~/.zprofile)
@@ -80,6 +82,12 @@
         PATH="$HOME/.yarn/bin:$PATH"
     fi
 
+# - IN ncurses -----------------------------------------------------------------
+    
+    if [ -d "/usr/local/opt/ncurses/bin" ] ; then
+        PATH="/usr/local/opt/ncurses/bin:$PATH"
+    fi
+
 # - IN N (NODE.JS) -------------------------------------------------------------
 
     # set PATH so it includes binaries from Node.js/n (see http://git.io/n-install-repo)
@@ -106,20 +114,20 @@ export EDITOR='nvim'
 
 # - CONFIG FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.prelude.zsh ]] || source $HOME/.yehnah/.prelude.zsh
+    [[ ! -f $HOME/.dotfiles/.prelude.zsh ]] || source $HOME/.dotfiles/.prelude.zsh
 
 # - ALIAS FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.alias.zsh ]] || source $HOME/.yehnah/.alias.zsh
+    [[ ! -f $HOME/.dotfiles/.alias.zsh ]] || source $HOME/.dotfiles/.alias.zsh
 
 # - FUNCTION FILE --------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.functions.zsh ]] || source $HOME/.yehnah/.functions.zsh
+    [[ ! -f $HOME/.dotfiles/.functions.zsh ]] || source $HOME/.dotfiles/.functions.zsh
 
 # - SCRIPT FILE ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.scripts.zsh ]] || source $HOME/.yehnah/.scripts.zsh
+    [[ ! -f $HOME/.dotfiles/.scripts.zsh ]] || source $HOME/.dotfiles/.scripts.zsh
 
 # - HELP FILE ------------------------------------------------------------------
 
-    [[ ! -f $HOME/.yehnah/.help.zsh ]] || source $HOME/.yehnah/.help.zsh
+    [[ ! -f $HOME/.dotfiles/.help.zsh ]] || source $HOME/.dotfiles/.help.zsh

@@ -1,1 +1,1 @@
-[[ ! -f $HOME/.yehnah/.prelude.zsh ]] || source $HOME/.yehnah/.prelude.zsh
+[[ ! -f $HOME/.dotfiles/.prelude.zsh ]] || source $HOME/.dotfiles/.prelude.zsh

@@ -41,7 +41,7 @@ sudo apt install zsh
 ### Add **`.zshrc`**
 
 ```
-[[ ! -f ~/.yehnah/.yehnah.zshrc ]] || source ~/.yehnah/.yehnah.zshrc
+[[ ! -f ~/.dotfiles/.zshrc ]] || source ~/.dotfiles/.zshrc
 ```
 
 ### Create a cache directory for **zsh**

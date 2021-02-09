@@ -18,7 +18,7 @@
     function main {
         printf "\n${GREEN}Add: .gitconfig file${NC}\n\n"
 
-        [[ ! -f $HOME/.yehnah/templates/.gitconfig ]] || cp $HOME/.yehnah/templates/.gitconfig $HOME/.gitconfig
+        [[ ! -f $HOME/.dotfiles/templates/.gitconfig ]] || cp $HOME/.dotfiles/templates/.gitconfig $HOME/.gitconfig
 
         printf "\n${GREEN}Modify: ~/.czrc - add cz-emoji config${NC}\n\n"
 

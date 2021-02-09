@@ -13,12 +13,31 @@
 # SCRIPT
 # ══════════════════════════════════════════════════════════════════════════════
 
+function linux_install {
+        printf "\n${GREEN}Install: apt-get packages${NC}\n\n"
+        apt-get install git ripgrep
+    }
+
+    function mac_install {
+        printf "\n${GREEN}Install: homebrew packages${NC}\n\n"
+        brew install git ripgrep
+        brew install coreutils fd
+
+        printf "\n${GREEN}Install: emacs${NC}\n\n"
+        brew tap d12frosted/emacs-plus
+        brew install emacs-plus@28
+        ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications/Emacs.app
+    }
+
 # - MAIN ENTRY -----------------------------------------------------------------
 
     function main {
 
-        printf "\n${GREEN}Install: apt-get${NC}\n\n"
-        apt-get install git ripgrep
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            linux_install
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            mac_install
+        fi
 
         printf "\n${GREEN}Install: doom emacs${NC}\n\n"
         git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
@@ -32,7 +51,6 @@
 
         printf "\n${GREEN}Install: node.js via n${NC}\n\n"
         curl -L https://git.io/n-install | bash
-        n stable
 
         printf "\n${GREEN}Install: yarn packages${NC}\n\n"
         npm install --global yarn

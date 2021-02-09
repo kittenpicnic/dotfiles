@@ -1,4 +1,4 @@
 # - OUTPUT HELP DOCUMENTATION --------------------------------------------------
 help() {
-    slurp "$HOME/.yehnah/.help.txt"
+    slurp "$HOME/.dotfiles/.help.txt"
 }
