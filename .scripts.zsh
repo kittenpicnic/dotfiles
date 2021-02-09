@@ -1,6 +1,6 @@
 # - SYSTEM CONFIGURATION -------------------------------------------------------
 
-alias configureGit="~/.dotfiles/scripts/configure_git"
+alias setupGit="~/.dotfiles/scripts/setup_git"
 
 # - SYSTEM DEPENDENCIES --------------------------------------------------------
 

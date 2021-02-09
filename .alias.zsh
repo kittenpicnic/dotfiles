@@ -15,7 +15,7 @@
     alias configureZshAliases="edit $HOME/.dotfiles/.alias.zsh"
     alias configureZshFunctions="edit $HOME/.dotfiles/.functions.zsh"
     alias configureP10k="edit $HOME/.dotfiles/.p10k.zsh"
-    alias configureVim="edit $HOME/.config/nvim/init.vim"
+    alias configureEditor="edit $HOME/.doom.d"
     alias configureTmux="edit $HOME/.tmux.conf.local"
 
 # ══════════════════════════════════════════════════════════════════════════════

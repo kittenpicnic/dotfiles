@@ -110,7 +110,7 @@ PATH="$HOME/.emacs.d/bin:$PATH"
 # - PREFERENCES ----------------------------------------------------------------
 
 # Terminal editor of choice
-export EDITOR='nvim'
+export EDITOR='emacs -nw'
 
 # - CONFIG FILE -----------------------------------------------------------------
 

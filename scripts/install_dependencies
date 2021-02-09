@@ -15,13 +15,16 @@
 
 function linux_install {
         printf "\n${GREEN}Install: apt-get packages${NC}\n\n"
-        apt-get install git ripgrep
+        sudo apt-get install git ripgrep
+        sudo apt-get install emacs
+        sudo apt-get install tmux
     }
 
     function mac_install {
         printf "\n${GREEN}Install: homebrew packages${NC}\n\n"
         brew install git ripgrep
         brew install coreutils fd
+        brew install tmux
 
         printf "\n${GREEN}Install: emacs${NC}\n\n"
         brew tap d12frosted/emacs-plus
@@ -42,9 +45,6 @@ function linux_install {
         printf "\n${GREEN}Install: doom emacs${NC}\n\n"
         git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
         ~/.emacs.d/bin/doom install
-
-        printf "\n${GREEN}Install: p10k shell${NC}\n\n"
-        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 
         printf "\n${GREEN}Install: rust via rustup${NC}\n\n"
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

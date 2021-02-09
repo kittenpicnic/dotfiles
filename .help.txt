@@ -1,42 +1,34 @@
- .alias.zsh
+Config
 ------------
-- configureDotfiles
-- configureGit
-- configureZshrc
-- configureZshAliases
-- configureZshFunctions
-- configureP10k
-- configureVim
-- configureTmux
-- zshHistoryClean
-- portsShowNode
-- portsGrep
-- portsShowLocal
-- portsStop
-- httpGetStatus
-- nodeRemoveModules
-- nodeListGlobals
-- gitDisplayTree
+configureGit            - edit .gitconfig
+configureDotfiles       - edit .dotfiles
+configureZshrc          - edit .dotfiles/.zshrc
+configureZshAliases     - edit .dotfiles/.alias.zsh
+configureZshFunctions   - edit .dotfiles/.functions.zsh
+configureP10k           - edit .dotfiles/.p10k.zsh
+configureEditor         - edit .doom.d
+configureTmux           - edit .tmux.conf.local
+zshHistoryClean         - remove .zsh_history
 
- .scripts.zsh
---------------
-- cleanupKernels
-- configureGit
-- installDependencies
-- updateDependencies
-- updateFonts
-- updateGrub
-
- .prelude.zsh
---------------
-- ask_for_sudo
-- yes_or_no
-- colors (see file for details)
-
- /templates
+Ports
 ------------
-- .gitconfig
-- /.vscode
-    - extensions
-    - settings
-    - snippets
+portsShowNode           - show ports running node.js
+portsGrep               - show ports running x
+portsShowLocal          - show ports on local
+portsStop               - stop a port by PID
+httpGetStatus           - ping URL for its status code
+
+Project
+------------
+nodeRemoveModules       - recursively remove all node_modules directories
+gitDisplayTree          - display git log as tree
+
+System
+------------
+nodeListGlobals         - list all globally installed modules
+cleanupKernels          - cleanup unused linux kernels
+setupGit                - create initial git system setup
+installDependencies     - install basic system tools and utils
+updateDependencies      - update system tools and utils
+updateFonts             - update fonts after installing (ubuntu)
+updateGrub              - update grub config after edit (ubuntu)
