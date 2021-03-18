@@ -88,6 +88,28 @@
         PATH="/usr/local/opt/ncurses/bin:$PATH"
     fi
 
+# - IN Java --------------------------------------------------------------------
+    
+    if [ -d "/usr/local/opt/openjdk/bin" ] ; then
+        PATH="/usr/local/opt/openjdk/bin:$PATH"
+    fi
+
+# - IN Go ----------------------------------------------------------------------
+    
+    if [ -d "$HOME/go/bin" ] ; then
+        PATH="$HOME/go/bin:$PATH"
+        export GOPATH=$HOME/go
+    fi
+
+# - IN Ruby --------------------------------------------------------------------
+    
+    if [ -d "$HOME/.rbenv/shims" ] ; then
+        PATH="$HOME/.rbenv/shims:$PATH"
+    fi
+
+# - IN Haskell -----------------------------------------------------------------
+    [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
+
 # - IN N (NODE.JS) -------------------------------------------------------------
 
     # set PATH so it includes binaries from Node.js/n (see http://git.io/n-install-repo)

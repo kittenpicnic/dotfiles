@@ -33,7 +33,6 @@ Mix of useful aliases for common system commands.
 
 Mix of useful functions for common tasks.
 
-
 ### Prelude
 
 Ready-to-use constants and functions to ease the stress of shell scripting.
@@ -98,6 +97,10 @@ git clone git@github.com:yehnah/dotfiles.git .dotfiles
 ```sh
 $ mkdir ~/.cache/zsh
 ```
+
+#### Hush That Login
+
+The `.hushlogin` file is an empty file that goes in your home (`~`) directory to silence the login text that appears at the start of every shell session.
 
 ### Config Setup
 
