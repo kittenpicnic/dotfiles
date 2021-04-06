@@ -1,0 +1,14 @@
+session_name: main
+windows:
+- window_name: org
+  layout: tiled
+  panes:
+    - shell_command:
+        - cd ~/org
+        - clear
+- window_name: dev
+  layout: tiled
+  panes:
+    - shell_command:
+        - cd ~/projects
+        - clear

@@ -25,6 +25,7 @@ function linux_install {
         brew install git ripgrep
         brew install coreutils fd
         brew install tmux
+        pip3 install tmuxp
 
         printf "\n${GREEN}Install: emacs${NC}\n\n"
         brew tap d12frosted/emacs-plus

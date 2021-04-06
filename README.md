@@ -162,6 +162,10 @@ In the **Preferences -> Profile -> General -> Send text at start** field:
 ```
 tmux attach -t main || tmux new -s main
 ```
+or with `tmuxp`
+```
+tmux attach -t main || tmuxp load main
+```
 
 ---
 
