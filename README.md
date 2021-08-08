@@ -82,7 +82,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10
 #### Clone this repo to `~/.dotfiles`
 
 ```sh
-git clone git@github.com:yehnah/dotfiles.git .dotfiles
+git clone git@github.com:pyxylyze/dotfiles.git .dotfiles
 ```
 
 #### Add **`.zshrc`**

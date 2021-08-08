@@ -69,6 +69,10 @@
         PATH="$HOME/.local/bin:$PATH"
     fi
 
+    if [ -d "/usr/local/sbin" ] ; then
+        PATH="/usr/local/sbin:$PATH"
+    fi
+
 # - IN CARGO -------------------------------------------------------------------
 
     # set PATH so it includes binaries from Rust/Cargo
@@ -110,6 +114,18 @@
 # - IN Haskell -----------------------------------------------------------------
     [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
 
+# - IN .NET Tools --------------------------------------------------------------
+
+if [ -d "$HOME/.dotnet/tools" ] ; then
+    PATH="$HOME/.dotnet/tools:$PATH"
+fi
+
+# - IN HAXE
+
+if [ -f "/usr/local/lib/haxe/std" ] ; then
+    export HAXE_STD_PATH="/usr/local/lib/haxe/std"
+fi
+
 # - IN N (NODE.JS) -------------------------------------------------------------
 
     # set PATH so it includes binaries from Node.js/n (see http://git.io/n-install-repo)
@@ -121,7 +137,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     eval "$(rbenv init -)"
 fi
 
-# - IN EMACS ----------------------------------------------------------------------------
+# - IN EMACS -------------------------------------------------------------------
 
 PATH="$HOME/.emacs.d/bin:$PATH"
 
