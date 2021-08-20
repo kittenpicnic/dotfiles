@@ -1,5 +1,7 @@
 # Config & Dotfiles
 
+![Dotfiles Terminal Example](./screenshots/screenshot.png)
+
 An extendable dotfiles config for mac and ubuntu.
 
 These dotfiles are setup to make setting up and maintaining a personal system as effortless as possible. 
