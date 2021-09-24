@@ -49,7 +49,7 @@
 
 # - P10K CONFIG ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.p10k.zsh ]] || source $HOME/.dotfiles/.p10k.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.p10k.zsh ]] || source $HOME/.dotfiles/.zsh/.p10k.zsh
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PATH MODIFICATIONS (could go in ~/.zprofile)
@@ -152,20 +152,20 @@ export EDITOR='emacs -nw'
 
 # - CONFIG FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.prelude.zsh ]] || source $HOME/.dotfiles/.prelude.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.prelude.zsh ]] || source $HOME/.dotfiles/.zsh/.prelude.zsh
 
 # - ALIAS FILE -----------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.alias.zsh ]] || source $HOME/.dotfiles/.alias.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.alias.zsh ]] || source $HOME/.dotfiles/.zsh/.alias.zsh
 
 # - FUNCTION FILE --------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.functions.zsh ]] || source $HOME/.dotfiles/.functions.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.functions.zsh ]] || source $HOME/.dotfiles/.zsh/.functions.zsh
 
 # - SCRIPT FILE ----------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.scripts.zsh ]] || source $HOME/.dotfiles/.scripts.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.scripts.zsh ]] || source $HOME/.dotfiles/.zsh/.scripts.zsh
 
 # - HELP FILE ------------------------------------------------------------------
 
-    [[ ! -f $HOME/.dotfiles/.help.zsh ]] || source $HOME/.dotfiles/.help.zsh
+    [[ ! -f $HOME/.dotfiles/.zsh/.help.zsh ]] || source $HOME/.dotfiles/.zsh/.help.zsh

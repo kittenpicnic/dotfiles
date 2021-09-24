@@ -1,1 +1,0 @@
-[[ ! -f $HOME/.dotfiles/.prelude.zsh ]] || source $HOME/.dotfiles/.prelude.zsh
