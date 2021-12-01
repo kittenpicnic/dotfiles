@@ -1,0 +1,22 @@
+// ══════════════════════════════════════════════════════════════════════════════
+// VSCODE PROJECT SETTINGS
+// ══════════════════════════════════════════════════════════════════════════════
+
+{   
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.rulers": [
+        {
+            "color": "#FFFFFF22",
+            "column": 80
+        },
+        {
+            "color": "#FFFFFF10",
+            "column": 120
+        }
+    ],
+    "rust-analyzer.checkOnSave.command": "clippy"
+
+}

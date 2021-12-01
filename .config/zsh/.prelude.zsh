@@ -8,14 +8,14 @@
     NC="\033[0m"
 
     # DEFAULT
-    BLACK="\033[0;30m"        # Black
-    RED="\033[0;31m"          # Red
-    GREEN="\033[0;32m"        # Green
-    YELLOW="\033[0;33m"       # Yellow
-    BLUE="\033[0;34m"         # Blue
-    PURPLE="\033[0;35m"       # Purple
-    CYAN="\033[0;36m"         # Cyan
-    WHITE="\033[0;37m"        # White
+    BLACK="\033[0;30m"          # Black
+    RED="\033[0;31m"            # Red
+    GREEN="\033[0;32m"          # Green
+    YELLOW="\033[0;33m"         # Yellow
+    BLUE="\033[0;34m"           # Blue
+    PURPLE="\033[0;35m"         # Purple
+    CYAN="\033[0;36m"           # Cyan
+    WHITE="\033[0;37m"          # White
 
     # BOLD
     BLACK_B="\033[1;30m"        # Black
@@ -38,14 +38,14 @@
     WHITE_U="\033[4;37m"        # White
 
     # BACKGROUND
-    BLACK_BG="\033[40m"        # Black
-    RED_BG="\033[41m"          # Red
-    GREEN_BG="\033[42m"        # Green
-    YELLOW_BG="\033[43m"       # Yellow
-    BLUE_BG="\033[44m"         # Blue
-    PURPLE_BG="\033[45m"       # Purple
-    CYAN_BG="\033[46m"         # Cyan
-    WHITE_BG="\033[47m"        # White
+    BLACK_BG="\033[40m"         # Black
+    RED_BG="\033[41m"           # Red
+    GREEN_BG="\033[42m"         # Green
+    YELLOW_BG="\033[43m"        # Yellow
+    BLUE_BG="\033[44m"          # Blue
+    PURPLE_BG="\033[45m"        # Purple
+    CYAN_BG="\033[46m"          # Cyan
+    WHITE_BG="\033[47m"         # White
 
     # HIGH INTENSITY
     BLACK_I="\033[0;90m"        # Black
@@ -58,24 +58,24 @@
     WHITE_I="\033[0;97m"        # White
 
     # BOLD HIGH INTENSITY
-    BLACK_BI="\033[1;90m"        # Black
-    RED_BI="\033[1;91m"          # Red
-    GREEN_BI="\033[1;92m"        # Green
-    YELLOW_BI="\033[1;93m"       # Yellow
-    BLUE_BI="\033[1;94m"         # Blue
-    PURPLE_BI="\033[1;95m"       # Purple
-    CYAN_BI="\033[1;96m"         # Cyan
-    WHITE_BI="\033[1;97m"        # White
+    BLACK_BI="\033[1;90m"       # Black
+    RED_BI="\033[1;91m"         # Red
+    GREEN_BI="\033[1;92m"       # Green
+    YELLOW_BI="\033[1;93m"      # Yellow
+    BLUE_BI="\033[1;94m"        # Blue
+    PURPLE_BI="\033[1;95m"      # Purple
+    CYAN_BI="\033[1;96m"        # Cyan
+    WHITE_BI="\033[1;97m"       # White
 
     # HIGH INTENSITY BG
-    BLACK_IBG="\033[0;100m"        # Black
-    RED_IBG="\033[0;101m"          # Red
-    GREEN_IBG="\033[0;102m"        # Green
-    YELLOW_IBG="\033[0;103m"       # Yellow
-    BLUE_IBG="\033[0;104m"         # Blue
-    PURPLE_IBG="\033[100;95m"       # Purple
-    CYAN_IBG="\033[0;106m"         # Cyan
-    WHITE_IBG="\033[0;107m"        # White
+    BLACK_IBG="\033[0;100m"     # Black
+    RED_IBG="\033[0;101m"       # Red
+    GREEN_IBG="\033[0;102m"     # Green
+    YELLOW_IBG="\033[0;103m"    # Yellow
+    BLUE_IBG="\033[0;104m"      # Blue
+    PURPLE_IBG="\033[100;95m"   # Purple
+    CYAN_IBG="\033[0;106m"      # Cyan
+    WHITE_IBG="\033[0;107m"     # White
 
 # ══════════════════════════════════════════════════════════════════════════════
 # FUNCTIONS

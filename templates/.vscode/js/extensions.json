@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "joostlubach.js-index",
+        "unional.vscode-sort-package-json",
+		"chakrounanas.turbo-console-log",
+		"jpoissonnier.vscode-styled-components",
+		"orta.vscode-jest",
+		"mariusalchimavicius.json-to-ts",
+		"christian-kohler.npm-intellisense",
+        "stevensona.character-count",
+    ]
+}

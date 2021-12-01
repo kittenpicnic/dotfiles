@@ -17,27 +17,7 @@
         "connorshea.vscode-test-explorer-status-bar",
         "coenraads.bracket-pair-colorizer",
 		"visualstudioexptteam.vscodeintellicode",
-        // Rust
-        "vadimcn.vscode-lldb",
-		"polypus74.trusty-rusty-snippets",
-		"swellaby.vscode-rust-test-adapter",
-		"sidp.strict-whitespace",
-		"stuart.unique-window-colors",
-        "rust-lang.rust",
-        // JS/TS
-        "dbaeumer.vscode-eslint",
-        "joostlubach.js-index",
-        "unional.vscode-sort-package-json",
-		"chakrounanas.turbo-console-log",
-		"jpoissonnier.vscode-styled-components",
-		"orta.vscode-jest",
-		"mariusalchimavicius.json-to-ts",
-		"christian-kohler.npm-intellisense",
-        "stevensona.character-count",
         // Docker
         "ms-azuretools.vscode-docker",
-    ],
-    "unwantedRecommendations": [
-        "ms-vscode.vscode-typescript-tslint-plugin"
     ]
 }

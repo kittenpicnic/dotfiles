@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CONFIG
@@ -13,64 +13,14 @@
 # SCRIPT
 # ══════════════════════════════════════════════════════════════════════════════
 
-    function linux_update {
-        printf "\n${GREEN}Update: apt${NC}\n\n"
-        sudo apt update
-        sudo apt upgrade
-
-        printf "\n${GREEN}Update: apt-get${NC}\n\n"
-        sudo apt-get update
-        sudo apt-get upgrade
-
-        printf "\n${GREEN}Update: apt autoremove${NC}\n\n"
-        sudo apt autoremove
-
-        printf "\n${GREEN}Update: snap${NC}\n\n"
-        sudo snap refresh
-    }
-
-    function mac_update {
-        printf "\n${GREEN}Update: homebrew${NC}\n\n"
-        brew update
-        brew upgrade
-    }
-
 # - MAIN ENTRY -----------------------------------------------------------------
 
-    function main {
-
-        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-            linux_update
-        elif [[ "$OSTYPE" == "darwin"* ]]; then
-            mac_update
-        fi
-
-        printf "\n${GREEN}Update: rustup${NC}\n\n"
-        rustup update
-
-        printf "\n${GREEN}Update: n${NC}\n\n"
-        n stable
-
-        printf "\n${GREEN}Update: npm${NC}\n\n"
-        npm install --global npm
-
-        printf "\n${GREEN}Update: npm packages${NC}\n\n"
-        npm upgrade --global
-
-        printf "${GREEN}Update: yarn packages${NC}\n\n"
-        yarn global upgrade
-
-        printf "${GREEN}Update: emacs - doom${NC}\n\n"
-        doom upgrade
-
-        printf "\n${GREEN}Update: Finished${NC}\n\n"
+    function main() {
+        fc-cache -fv
     }
 
 # ══════════════════════════════════════════════════════════════════════════════
 # EXECUTION
 # ══════════════════════════════════════════════════════════════════════════════
 
-# - RUN AS ROOT ----------------------------------------------------------------
-
-    ask_for_sudo main
-
+    main

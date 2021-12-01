@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "matklad.rust-analyzer",
+        "serayuzgur.crates",
+        "bungcip.better-toml",
+        "hbenl.vscode-test-explorer",
+        "swellaby.vscode-rust-test-adapter",
+        "polypus74.trusty-rusty-snippets",
+        "a5huynh.vscode-ron"
+    ]
+}

@@ -1,0 +1,2 @@
+#!/bin/bash
+[[ ! -f $ZSH_CONFIG_PATH/.prelude.zsh ]] || source $ZSH_CONFIG_PATH/.prelude.zsh
